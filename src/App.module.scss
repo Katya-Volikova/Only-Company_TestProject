@@ -1,0 +1,75 @@
+.container {
+  margin: 0 auto;
+
+  @media (width >= 1440px) {
+    padding-left: 160px;
+    padding-right: 8px;
+  }
+}
+
+.wrapper {
+  max-width: 1440px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 100vh;
+  padding: 59px 20px;
+
+  @media (width >= 1440px) {
+    padding: 0;
+    border-left: 1px solid rgba(66, 86, 122, 0.3);
+    border-right: 1px solid rgba(66, 86, 122, 0.3);
+  }
+}
+
+.absoluteWrapper {
+  position: relative;
+
+  @media (width >= 1440px) {
+    padding: 0 40px 0 80px;
+    height: 650px;
+  }
+}
+
+.cards {
+  display: none;
+
+  @media (width >= 1440px) {
+    display: block;
+    padding: 0 40px 0 80px;
+  }
+}
+
+.gorizontalLine {
+  background: rgba(66, 86, 122, 0.1);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  display: none;
+
+  @media (width >= 1440px) {
+    display: block;
+  }
+}
+
+.verticalLine {
+  background: rgba(66, 86, 122, 0.1);
+  position: absolute;
+  transform: translateX(-50%);
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100vh;
+  z-index: -1;
+  display: none;
+
+  @media (width >= 1440px) {
+    display: block;
+  }
+}

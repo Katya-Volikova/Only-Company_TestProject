@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'BebasNeue';
+  /*
+  56780-format shouldnt be included
+  issue https://stackoverflow.com/questions/77212739/fonts-not-loading-in-vite-react
+  */
+  src: url('@assets/fonts/BebasNeue-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: "PT Sans";
+  user-select: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+

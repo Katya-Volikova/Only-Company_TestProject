@@ -1,0 +1,65 @@
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+
+  border: none;
+  border-radius: 50%;
+  box-shadow: -3px 3px 40px 3px rgba(56, 119, 238, 0.1) ;;
+  background-color: white;
+
+  &:not(:disabled):hover {
+    box-shadow: -2px 2px 10px 3px rgba(56, 119, 238, 0.1) ;
+  }
+
+  &:disabled {
+    display: none;
+  }
+
+  &.next {
+    right: 16px;
+  }
+
+  &.prev {
+    right: 66px;
+  }
+}
+
+.icon {
+  color: #42567A;
+  width: 16px;
+  height: 16px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.slide {
+  width: auto !important;
+  position: relative;
+  z-index: 1 !important;
+}
+
+.swiperClassName {
+  @media (width >= 1440px) {
+    margin-right: 100px !important;
+  }
+}
+
+.buttons {
+  display: none;
+
+  @media (width >= 1440px) {
+    display: block;
+  }
+}
